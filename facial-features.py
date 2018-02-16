@@ -165,10 +165,10 @@ for geo_loc in geo_locs:
                 #print('mouth ratio: ' + str(mouth_ratio))
                 
                 addRow(geo_loc, gender, jaw_ratio, nasal_ratio, mouth_ratio)
-                count += 1
                 
                 cv2.imwrite('dataset/' + geo_loc + '_' + gender + '_' + str(count) + '.jpg' , image)
                 
+                count += 1
             #cv2.imshow("Image", image)       
             #cv2.waitKey(0)
 saveDF()           
